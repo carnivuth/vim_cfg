@@ -9,6 +9,5 @@ vim.filetype.add({pattern = { [".*/playbooks/.*%.yaml"] = "ansible" },})
 vim.filetype.add({pattern = { [".*/roles/.*%.yml"] = "ansible" },})
 vim.filetype.add({pattern = { [".*/roles/.*%.yaml"] = "ansible" },})
 
-
 -- treesitter language configurations
 vim.treesitter.language.register("yaml",{"ansible"})
