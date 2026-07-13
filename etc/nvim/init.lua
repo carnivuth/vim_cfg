@@ -8,6 +8,8 @@ require("config.lazy")
 require("config.filetypes")
 require("config.keymaps")
 require("config.autocmds")
+require("config.autocmds")
+require("cmp_sources.ygoprodeck")
 
 -- hugo custom commands
 require("hugo")

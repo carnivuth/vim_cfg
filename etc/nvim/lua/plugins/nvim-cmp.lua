@@ -58,6 +58,7 @@ return {
         { name = 'buffer' },
         { name = 'path' },
         { name = "parrot" },
+        { name = "ygoprodeck" },
       }),
     })
     cmp.setup.filetype("tex", {
