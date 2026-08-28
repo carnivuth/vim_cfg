@@ -7,7 +7,7 @@ ENV TERM=xterm-256color
 ENV EDITOR=nvim
 
 # install deps
-RUN pacman -Sy ollama rust mermaid-cli yq tealdeer ranger man wikiman sudo python unzip go curl tar lazygit starship openssh gcc npm neovim vim tmux fzf ripgrep ttf-jetbrains-mono-nerd stow gawk git --noconfirm
+RUN pacman -Sy rust mermaid-cli yq tealdeer ranger man wikiman sudo python unzip go curl tar lazygit starship openssh gcc npm neovim vim tmux fzf ripgrep ttf-jetbrains-mono-nerd stow gawk git --noconfirm
 
 # user setup for fixuid
 RUN groupadd toolbox -g 2000
