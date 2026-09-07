@@ -18,6 +18,8 @@ inotifywait \
 --monitor  \
 --event move_self \
 --event create \
+--event modify \
+--event delete \
 --recursive \
 --exclude "$(find .  -name '.git' -type d -printf '%P|').*\.aux|.*\.bbl|.*\.bcf|.*\.bcf-SAVE-ERROR|.*\.blg|.*\.fdb_latexmk|.*\.fls|.*\.idx|.*\.ilg|.*\.ind|.*\.log|.*\.out|.*\.pdf|.*\.run" \
 --format "%w %e %f" $TARGET_FILES | while read file event newfile; do
